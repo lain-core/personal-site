@@ -1,10 +1,10 @@
-import type { Markdown } from "$lib/types/markdown";
+import type { Markdown, MarkdownPost } from "$lib/types/markdown";
 
-export const fetchMarkdownPosts = async () => {
+export const fetchMarkdownPosts = async (): Promise<MarkdownPost[]> => {
 	const allPostFiles = import.meta.glob('/src/routes/blog/*.md');
 	const iterablePostFiles = Object.entries(allPostFiles);
 
-	const allPosts = await Promise.all(
+	const allPosts: MarkdownPost[] = await Promise.all(
 		iterablePostFiles.map(async ([path, resolver]) => {
 			const { metadata } = await resolver() as Markdown;
 			const postPath = path.slice(11, -3);
