@@ -1,11 +1,9 @@
 <script lang="ts">
 	export let data;
-
-	import BlogImageBox from '$lib/components/BlogImageBox.svelte';
 </script>
 
 <svelte:head>
-	<title>My blog - {data.title}</title>
+	<title>{data.title}</title>
 	<meta property="og:title" content={data.title} />
 </svelte:head>
 
