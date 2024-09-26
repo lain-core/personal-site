@@ -4,10 +4,20 @@
 	import '$lib/styles/style.scss';
 </script>
 
-<Header />
+<div>
+	<Header />
 
-<main>
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
+	
+	<Footer />
+	
+</div>
 
-<Footer />
+<style>
+	div {
+		width: 100vw;
+		height: 100vh;
+	}
+</style>
