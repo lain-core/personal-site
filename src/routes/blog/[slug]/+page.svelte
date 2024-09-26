@@ -30,10 +30,3 @@
 		</aside>
 	{/if}
 </article>
-
-<style>
-	img {
-		max-width: 500px;
-		max-height: 500px;
-	}
-</style>
