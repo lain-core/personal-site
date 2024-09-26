@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    background: #eee;
-    color: #333;
+    background: #002b36;
+    color: #93a1a1;
     font-family: sans-serif;
 }
 
@@ -9,6 +9,14 @@ main {
     padding: 1rem;
     margin: 2rem auto;
     max-width: 40rem;
+}
+
+a {
+    color: #859900
+}
+
+a:visited {
+    color: #dc322f
 }
 
 :where(h2, h3, h4, h5, h6) {

@@ -7,7 +7,7 @@ export interface Markdown {
     }
 }
 
-export interface MarkdownPost {
+export interface MarkdownGet {
     meta: Markdown["metadata"],
     // meta: {
     //     title: string,
@@ -17,3 +17,4 @@ export interface MarkdownPost {
     // },
     path: string
 }
+

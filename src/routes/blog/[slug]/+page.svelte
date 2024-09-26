@@ -1,5 +1,7 @@
 <script lang="ts">
 	export let data;
+
+	import BlogImageBox from '$lib/components/BlogImageBox.svelte';
 </script>
 
 <svelte:head>
@@ -10,6 +12,7 @@
 <article>
 	<h1>{data.title}</h1>
 	<p>Published: {data.date}</p>
+
 	<svelte:component this={data.content} />
 
 	{#if data.categories.length}
@@ -27,3 +30,10 @@
 		</aside>
 	{/if}
 </article>
+
+<style>
+	img {
+		max-width: 500px;
+		max-height: 500px;
+	}
+</style>

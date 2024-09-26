@@ -16,7 +16,7 @@
 <style>
 	header {
 		padding: 1rem;
-		background: lightskyblue;
+		background: #073642;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -32,5 +32,9 @@
 	a {
 		text-decoration: none;
 		color: inherit;
+	}
+
+	a:visited {
+ 		color: #859900
 	}
 </style>
