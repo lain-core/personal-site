@@ -7,8 +7,6 @@ export const load = async ({ fetch, params }) => {
 
 	const posts = allPosts.filter((post: MarkdownGet) => post.meta.categories.includes(category));
 
-    console.log(posts);
-
 	return {
 		category,
 		posts
